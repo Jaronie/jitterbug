@@ -1,6 +1,7 @@
 #include <bn_core.h>
 #include <bn_backdrop.h>
 #include <bn_color.h>
+#include <bn_sprite_ptr.h>
 
 #include "bn_sprite_items_bug.h"
 
@@ -10,6 +11,7 @@ int main()
 
     bn::backdrop::set_color(bn::color(0,23,12));
 
+    bn::sprite_ptr jeffrey = bn::sprite_items::bug.create_sprite();
 
     while (true)
     {
